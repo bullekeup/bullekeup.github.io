@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on BuLLeKeUp&#39;s blog</title>
+    <link>http://bullekeup.net/blog/</link>
+    <description>Recent content in Blogs on BuLLeKeUp&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Jan 2018 15:43:34 +0100</lastBuildDate>
+    
+	<atom:link href="http://bullekeup.net/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Complete NS3 with DCE installation on Ubuntu 16.04 and 17.04</title>
+      <link>http://bullekeup.net/blog/ns3-dce-ubuntu-16-4-17-4/</link>
+      <pubDate>Sun, 21 Jan 2018 15:43:34 +0100</pubDate>
+      
+      <guid>http://bullekeup.net/blog/ns3-dce-ubuntu-16-4-17-4/</guid>
+      <description>&lt;p&gt;Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[HOWTO] Create a bootable Windows 10 EFI USB device on Linux</title>
+      <link>http://bullekeup.net/blog/howto-bootable-win10-efi-linux/</link>
+      <pubDate>Fri, 13 May 2016 17:49:05 +0200</pubDate>
+      
+      <guid>http://bullekeup.net/blog/howto-bootable-win10-efi-linux/</guid>
+      <description>WARNING: Your USB device will be totally erased from all content ! Do a backup if needed !
+Very small howto, just because I found many people who doesn’t know how to create a Windows 10 bootable USB device with EFI support.
+To make it short, to boot with EFI on modern computers (less than 5-6 years – both laptop and desktop – ) all you need is love a device with a GPT partition table and a FAT32 partition (called an ESP partition) containing Windows 10 files.</description>
+    </item>
+    
+    <item>
+      <title>GNU Tools on Windows with Cygwin and Vcxsrv</title>
+      <link>http://bullekeup.net/blog/gnu-tools-windows-cygwin-vcxsrv/</link>
+      <pubDate>Tue, 15 Mar 2016 18:41:32 +0200</pubDate>
+      
+      <guid>http://bullekeup.net/blog/gnu-tools-windows-cygwin-vcxsrv/</guid>
+      <description>Like I said before in my Windows 10 review, I decided to try out Windows 10 as my work machine. If the global experience after two weeks is not that glorious, I still have some interesting little things for GNU/Linux enthusiasts stuck with Windows for whatever reason.
+As I can’t decently work without a GNU environment, a decided to give Cygwin and VcXsrv a try.
+Quick reminder, Cygwin is</description>
+    </item>
+    
+    <item>
+      <title>Win10 Review</title>
+      <link>http://bullekeup.net/blog/win10-review/</link>
+      <pubDate>Tue, 15 Mar 2016 18:14:56 +0200</pubDate>
+      
+      <guid>http://bullekeup.net/blog/win10-review/</guid>
+      <description>Microsoft recently took my attention thanks to its open-source move for a lot of their .NET core framework, and a bunch of other libraries (see Microsoft’s github).
+Add to that their recent partnership with Red Hat and Canonical, and the idea of testing the last Windows release suddenly came to my mind. Last factor : my recent issues with Xen and ATI Drivers on Win 7 virtual machine, and the lack of time to resolve them for now, leave me with no other choice than moving to Windows for gaming.</description>
+    </item>
+    
+  </channel>
+</rss>

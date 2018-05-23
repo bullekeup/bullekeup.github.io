@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on BuLLeKeUp&#39;s blog</title>
+    <link>http://bullekeup.net/tags/</link>
+    <description>Recent content in Tags on BuLLeKeUp&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 May 2016 17:49:05 +0200</lastBuildDate>
+    
+	<atom:link href="http://bullekeup.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Boot</title>
+      <link>http://bullekeup.net/tags/boot/</link>
+      <pubDate>Fri, 13 May 2016 17:49:05 +0200</pubDate>
+      
+      <guid>http://bullekeup.net/tags/boot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cygwin</title>
+      <link>http://bullekeup.net/tags/cygwin/</link>
+      <pubDate>Tue, 15 Mar 2016 18:41:32 +0200</pubDate>
+      
+      <guid>http://bullekeup.net/tags/cygwin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dce</title>
+      <link>http://bullekeup.net/tags/dce/</link>
+      <pubDate>Sun, 21 Jan 2018 15:43:34 +0100</pubDate>
+      
+      <guid>http://bullekeup.net/tags/dce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efi</title>
+      <link>http://bullekeup.net/tags/efi/</link>
+      <pubDate>Fri, 13 May 2016 17:49:05 +0200</pubDate>
+      
+      <guid>http://bullekeup.net/tags/efi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gnu</title>
+      <link>http://bullekeup.net/tags/gnu/</link>
+      <pubDate>Tue, 15 Mar 2016 18:41:32 +0200</pubDate>
+      
+      <guid>http://bullekeup.net/tags/gnu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Howto</title>
+      <link>http://bullekeup.net/tags/howto/</link>
+      <pubDate>Fri, 13 May 2016 17:49:05 +0200</pubDate>
+      
+      <guid>http://bullekeup.net/tags/howto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://bullekeup.net/tags/linux/</link>
+      <pubDate>Sun, 21 Jan 2018 15:43:34 +0100</pubDate>
+      
+      <guid>http://bullekeup.net/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ns3</title>
+      <link>http://bullekeup.net/tags/ns3/</link>
+      <pubDate>Sun, 21 Jan 2018 15:43:34 +0100</pubDate>
+      
+      <guid>http://bullekeup.net/tags/ns3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Review</title>
+      <link>http://bullekeup.net/tags/review/</link>
+      <pubDate>Tue, 15 Mar 2016 18:14:56 +0200</pubDate>
+      
+      <guid>http://bullekeup.net/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>http://bullekeup.net/tags/ubuntu/</link>
+      <pubDate>Sun, 21 Jan 2018 15:43:34 +0100</pubDate>
+      
+      <guid>http://bullekeup.net/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Usb</title>
+      <link>http://bullekeup.net/tags/usb/</link>
+      <pubDate>Fri, 13 May 2016 17:49:05 +0200</pubDate>
+      
+      <guid>http://bullekeup.net/tags/usb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vcxsrv</title>
+      <link>http://bullekeup.net/tags/vcxsrv/</link>
+      <pubDate>Tue, 15 Mar 2016 18:41:32 +0200</pubDate>
+      
+      <guid>http://bullekeup.net/tags/vcxsrv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Win10</title>
+      <link>http://bullekeup.net/tags/win10/</link>
+      <pubDate>Fri, 13 May 2016 17:49:05 +0200</pubDate>
+      
+      <guid>http://bullekeup.net/tags/win10/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

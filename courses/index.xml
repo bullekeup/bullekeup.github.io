@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Courses on BuLLeKeUp&#39;s blog</title>
+    <link>http://bullekeup.net/courses/</link>
+    <description>Recent content in Courses on BuLLeKeUp&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://bullekeup.net/courses/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Geipi</title>
+      <link>http://bullekeup.net/courses/geipi/</link>
+      <pubDate>Wed, 23 May 2018 09:44:06 +0200</pubDate>
+      
+      <guid>http://bullekeup.net/courses/geipi/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

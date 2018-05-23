@@ -1,0 +1,691 @@
+
+
+  
+    
+  
+
+
+  
+
+
+
+
+  
+
+
+  
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.40.3 with theme Tranquilpeak 0.4.1-BETA">
+    <title>Complete NS3 with DCE installation on Ubuntu 16.04 and 17.04</title>
+    <meta name="author" content="BuLLeKeUp">
+    <meta name="keywords" content="ubuntu, linux, ns3, installation, dce, development, linux">
+
+    <link rel="icon" href="http://bullekeup.net/favicon.png">
+    
+
+    
+    <meta name="description" content="Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
+">
+    <meta property="og:description" content="Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
+">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Complete NS3 with DCE installation on Ubuntu 16.04 and 17.04">
+    <meta property="og:url" content="/blog/ns3-dce-ubuntu-16-4-17-4/">
+    <meta property="og:site_name" content="BuLLeKeUp&#39;s blog">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="BuLLeKeUp&#39;s blog">
+    <meta name="twitter:description" content="Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
+">
+    
+      <meta name="twitter:creator" content="@BuLLeKeUp">
+    
+    
+
+    
+    
+
+    
+      <meta property="og:image" content="//www.gravatar.com/avatar/f8dd07be3e89881825b3d2c5f01d513d?s=640">
+    
+
+    
+      <meta property="og:image" content="//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city-750.jpg">
+    
+    
+      <meta property="og:image" content="//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city.jpg">
+    
+    
+
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="http://bullekeup.net/css/style-fpbzgxsy0kgmdvyrj5ykkg6ratccrk3gocmaqn4xpcjywmv5dteilzucro4f.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="http://bullekeup.net/">BuLLeKeUp&#39;s blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="http://bullekeup.net/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="//www.gravatar.com/avatar/f8dd07be3e89881825b3d2c5f01d513d?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="http://bullekeup.net/#about">
+          <img class="sidebar-profile-picture" src="//www.gravatar.com/avatar/f8dd07be3e89881825b3d2c5f01d513d?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">BuLLeKeUp</h4>
+        
+          <h5 class="sidebar-profile-bio">FOSS Coder - Guitar player - Cookie maker</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://bullekeup.net/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://bullekeup.net/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://bullekeup.net/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://bullekeup.net/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://bullekeup.net/courses">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Courses</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://bullekeup.net/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/bullekeup" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/6780627/bullekeup" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://bullekeup.net/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-center
+              "
+       style="background-image:url('//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city.jpg')"
+       data-behavior="4">
+    
+      <div class="post-header main-content-wrap text-center">
+  
+    <h1 class="post-title" itemprop="headline">
+      Complete NS3 with DCE installation on Ubuntu 16.04 and 17.04
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-01-21T15:43:34&#43;01:00">
+        
+  January 21, 2018
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="http://bullekeup.net/categories/ubuntu">ubuntu</a>, 
+    
+      <a class="category-link" href="http://bullekeup.net/categories/linux">linux</a>, 
+    
+      <a class="category-link" href="http://bullekeup.net/categories/ns3">ns3</a>, 
+    
+      <a class="category-link" href="http://bullekeup.net/categories/network">network</a>
+    
+  
+
+
+  </div>
+
+</div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="4"
+        class="hasCover
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
+</p>
+
+<p>I recently installed NS3 to benchmark different network applications and protocol implementations such as <a href="https://github.com/obgm/libcoap">libcoap</a>. I used different VMs with either Ubuntu 16.04 LTS or Ubuntu 17.04 to run NS3, and since I encountered many difficulties to make all modules successfully build and work, here are some patches to overcome common problems.</p>
+
+<p><em>NOTE: This applies only for NS3 installation via bake. Instructions can be altered to work with waf directly but I don&rsquo;t provide them.</em></p>
+
+<p><strong>WARN:</strong> Since DCE only builds with ns-3.26 and it is only compatible fully with gcc-4.9 for now, you may not be able to port / use theses instructions on Ubuntu 17.10 and later (they don&rsquo;t provide gcc-4.9 packet). ns-3.27 installation should be fine on 17.10 and later, but I have not tested it.</p>
+
+<h2 id="install-dependencies">Install dependencies</h2>
+
+<p><strong>WARN:</strong> Ubuntu 17.04 support has ended (End Of Life), so you won&rsquo;t be able to install theses packets from official repos. Still, you may find third-party maintained repos available.</p>
+
+<p><strong>WARN:</strong> This packet list has been made for Ubuntu 17.04 and may be slightly different on 16.04.</p>
+
+<pre><code class="language-bash">user@machine$: sudo apt-get install build-essential gcc python python-dev mercurial python-setuptools git qt4-dev-tools libqt4-dev cmake libc6-dev libc6-dev-i386 g++-multilib gdb valgrind gsl-bin libgsl2 libgsl-dev flex bison libfl-dev tcpdump sqlite sqlite3 libsqlite3-dev libxml2 libxml2-dev libgtk2.0-0 libgtk2.0-dev vtun lxc uncrustify doxygen graphviz imagemagick texlive texlive-extra-utils texlive-latex-extra texlive-font-utils texlive-lang-portuguese dvipng python-sphinx dia python-pygraphviz python-kiwi python-pygoocanvas libgoocanvas-dev ipython libboost-signals-dev libboost-filesystem-dev openmpi-bin openmpi-common openmpi-doc libopenmpi-dev autoconf automake autotools-dev bzr unrar cvs p7zip-full m4 subversion
+
+user@machine$: sudo apt-get install gcc-4.9-multilib g++-4.9-multilib gcc-4.9-locales gcc-4.9-doc libstdc++6-4.9-dbg lib32stdc++6-4.9-dbg libx32stdc++6-4.9-dbg libgcc1-dbg libgomp1-dbg libitm1-dbg libatomic1-dbg libasan1-dbg liblsan0-dbg libtsan0-dbg libubsan0-dbg libcilkrts5-dbg libquadmath0-dbg libstdc++-4.9-doc libgcrypt11-dev libgcrypt20 libgcrypt20-dev libgcrypt20-doc castxml python-pygccxml  python3-pygccxml libaspect-perl libaspectj-java libssl-dev libssl1.0.0 libssl1.0.0-dbg libdb++-dev libdb-dev libdb5.3 libdb5.3++ libdb5.3++-dev libdb5.3-dbg libdb5.3-stl libdb5.3-stl-dev libpcap0.8 libpcap0.8-dbg libpcap0.8-dev libbenchmark-timer-perl aspectj db5.3-doc rng-tools emacs colord-sensor-argyll libasound2-plugins alsa-utils gphoto2 gvfs m17n-docs
+
+user@machine$: sudo apt-get install gawk llvm-3.8 llvm-3.8-dev llvm-3.8-doc llvm-3.8-tools llvm-dev libclang-3.8-dev libclang-common-3.8-dev clang-3.8 libc6-i386 libc6-dev-i386 libsctp-dev lksctp-tools lzop
+</code></pre>
+
+<h2 id="bakeconf-xml-patch">bakeconf.xml patch</h2>
+
+<p>Some modules paths are obsolete in default file, and I added a new module entry for my elf-loader patch needed to build DCE (see below). Install bake, download the patch and apply as follows.</p>
+
+<p><em>The patch applies for both Ubuntu 16.04 and 17.04, regardless of its name</em></p>
+
+<pre><code class="language-bash">user@machine$: hg clone http://code.nsnam.org/bake
+user@machine$: cd bake
+user@machine$: curl -LO https://gist.github.com/bullekeup/5b55e2d8005262b0f48d5f8a1db18372/raw/66d7d1b656f22c18f4545582c4324e67e5216b7d/bake-ubuntu-16-4.patch
+user@machine$: patch -p1 &lt; bake-ubuntu-16-4.patch
+</code></pre>
+
+<h2 id="elf-loader-patch">elf-loader patch</h2>
+
+<p><em>You don&rsquo;t have to apply this patch yourself if you use bake and have applied bakeconf.xml patch. I already have added it so it will be downloaded and applied automatically during the build process</em></p>
+
+<p>There are missing entries and obsolete code in <em>extract-system-config.py</em>, making the build failing. The patch I made, available <a href="https://gist.github.com/bullekeup/727cf9cce293f035569acbdc60e1803e">here</a>, allows elf-loader to properly find debug ld entries on Ubuntu 16.04 and 17.04.</p>
+
+<h2 id="pybindgen-version-mismatch-in-ns-3-26">pybindgen version mismatch in ns-3.26</h2>
+
+<p><strong>WARN:</strong> don&rsquo;t apply this part if you are building ns-3.27 !</p>
+
+<p>The version required in ns-3.26/bindings/python/wscript (0.17.0.post57+nga6376f2) is incorrect and must be replaced by 0.17.0.post57+ga6376f2 (see that &lsquo;n&rsquo; character ?)</p>
+
+<p>In fact, pybindgen provides the 0.17.0.post57+ga6376f2 version, and not 0.17.0.post57+nga6376f2 (even if that&rsquo;s the correct name in bake modules).</p>
+
+<p>In your ns3 working directory (where you call bake.py), use following sed command to correct the version requested by ns-3.26.</p>
+
+<pre><code class="language-bash">user@machine$: sed -i -e &quot;s/\(REQUIRED_PYBINDGEN_VERSION = '0.17.0.post57+\)n\(ga6376f2'\)/\1\2/g&quot; ./source/ns-3.26/bindings/python/wscript
+</code></pre>
+
+<h2 id="dependency-modules-cleaning">dependency modules cleaning</h2>
+
+<p><em>Following commands must be run in your ns3 working directory</em></p>
+
+<p>You have to manually delete objdir directories of castxml / gccxml to completely cleanup all cmake vars.</p>
+
+<pre><code class="language-bash">user@machine$: [[ -e ./source/castxml/objdir ]] &amp;&amp; rm -Rf ./source/castxml/objdir
+user@machine$: [[ -e ./source/gccxml/objdir ]] &amp;&amp; rm -Rf ./source/gccxml/objdir
+</code></pre>
+
+<p>Openflow must be cleaned by hand.</p>
+
+<pre><code class="language-bash">user@machine$: [[ -e ./source/openflow-dev ]] &amp;&amp; cd ./source/openflow-dev &amp;&amp; (./waf clean || true) &amp;&amp; ./waf distclean &amp;&amp; cd -
+</code></pre>
+
+<p>Pybindgen source dir must be deleted (wrong version may be checked out if you tried many builds with different configs).</p>
+
+<pre><code class="language-bash">user@machine$: [[ -e ./source/pybindgen ]] &amp;&amp; rm -Rf ./source/pybindgen
+</code></pre>
+
+<h2 id="dependency-modules-building">dependency modules building</h2>
+
+<p>Before launching a global <em>bake.py deploy</em>, you must ensure specific dependencies are installed in NS3 build dir (it may occur that they won&rsquo;t be found if you don&rsquo;t manually install them in the first place)</p>
+
+<p><strong>WARN:</strong> you must replace openflow and pybindgen modules here with version you used !</p>
+
+<pre><code class="language-bash">user@machine$: bake.py deploy -o gccxml-ns3
+user@machine$: bake.py deploy -o python-dev
+user@machine$: bake.py deploy -o setuptools
+user@machine$: bake.py deploy -o elf-loader
+user@machine$: bake.py deploy -o libaspect
+user@machine$: bake.py deploy -o openflow-dev
+user@machine$: bake.py deploy -o gccxml-ns3
+user@machine$: bake.py deploy -o pybindgen-0.17.0.post57+nga6376f2
+</code></pre>
+
+<p>You can now continue the installation process as specified in <a href="https://www.nsnam.org/wiki/Installation#Installation_with_Bake">NS3 installation tutorial</a>.</p>
+
+<p>I made a small install script wrapper (doesn&rsquo;t include dependencies installation, and to be adapted to your needs) for ns-3.26 with dce-linux-1.9 install, available <a href="https://gist.github.com/bullekeup/c04559f7cb75d5565706fd5146cc8538">here</a>.</p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="http://bullekeup.net/tags/ubuntu/">ubuntu</a>
+
+  <a class="tag tag--primary tag--small" href="http://bullekeup.net/tags/linux/">linux</a>
+
+  <a class="tag tag--primary tag--small" href="http://bullekeup.net/tags/ns3/">ns3</a>
+
+  <a class="tag tag--primary tag--small" href="http://bullekeup.net/tags/dce/">dce</a>
+
+                  </div>
+                
+              
+            
+            
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                <i class="fa fa-angle-left"></i>
+                <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+              </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="http://bullekeup.net/blog/howto-bootable-win10-efi-linux/" data-tooltip="[HOWTO] Create a bootable Windows 10 EFI USB device on Linux">
+              
+                <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                <i class="fa fa-angle-right"></i>
+              </a>
+            </li>
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://bullekeup.net/blog/ns3-dce-ubuntu-16-4-17-4/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://bullekeup.net/blog/ns3-dce-ubuntu-16-4-17-4/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://bullekeup.net/blog/ns3-dce-ubuntu-16-4-17-4/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2018 <a href="https://github.com/bullekeup">BuLLeKeUp</a>. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                <i class="fa fa-angle-left"></i>
+                <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+              </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="http://bullekeup.net/blog/howto-bootable-win10-efi-linux/" data-tooltip="[HOWTO] Create a bootable Windows 10 EFI USB device on Linux">
+              
+                <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                <i class="fa fa-angle-right"></i>
+              </a>
+            </li>
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://bullekeup.net/blog/ns3-dce-ubuntu-16-4-17-4/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://bullekeup.net/blog/ns3-dce-ubuntu-16-4-17-4/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://bullekeup.net/blog/ns3-dce-ubuntu-16-4-17-4/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbullekeup.net%2Fblog%2Fns3-dce-ubuntu-16-4-17-4%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http%3A%2F%2Fbullekeup.net%2Fblog%2Fns3-dce-ubuntu-16-4-17-4%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http%3A%2F%2Fbullekeup.net%2Fblog%2Fns3-dce-ubuntu-16-4-17-4%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="//www.gravatar.com/avatar/f8dd07be3e89881825b3d2c5f01d513d?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">BuLLeKeUp</h4>
+    
+      <div id="about-card-bio">FOSS Coder - Guitar player - Cookie maker</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Ph.D Student
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        France
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Search" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no post found</div>
+      <div class="results">
+        
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no post found"
+         data-message-one="1 post found"
+         data-message-other="{n} posts found">
+         0 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('http://bullekeup.net/images/bg.jpg');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha256-IFHWFEbU2/+wNycDECKgjIRSirRNIDp2acEB5fvdVRU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js" integrity="sha256-+mpyNVJsNt4rVXCw0F+pAOiB3YxmHgrbJsx4ecPuUaI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.js" integrity="sha256-vMxgR/7FtLovVA+IPrR7+xTgIgARH7y9VZQnmmi0HDI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.js" integrity="sha256-N0qFUh7/9vLvia87dDndewmsgsyYoNkdA212tPc+2NI=" crossorigin="anonymous"></script>
+
+
+<script src="http://bullekeup.net/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'http:\/\/bullekeup.net\/blog\/ns3-dce-ubuntu-16-4-17-4\/';
+          
+            this.page.identifier = '\/blog\/ns3-dce-ubuntu-16-4-17-4\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'hugo-tranquilpeak-theme';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+    
+  </body>
+</html>
+

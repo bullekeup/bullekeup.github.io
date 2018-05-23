@@ -1,0 +1,622 @@
+
+
+  
+    
+  
+
+
+  
+
+
+
+
+  
+
+
+  
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.40.3 with theme Tranquilpeak 0.4.1-BETA">
+    <title>Win10 Review</title>
+    <meta name="author" content="BuLLeKeUp">
+    <meta name="keywords" content="win10, windows, review, microsoft, development, linux">
+
+    <link rel="icon" href="http://bullekeup.net/favicon.png">
+    
+
+    
+    <meta name="description" content="Microsoft recently took my attention thanks to its open-source move for a lot of their .NET core framework, and a bunch of other libraries (see Microsoft’s github).
+Add to that their recent partnership with Red Hat and Canonical, and the idea of testing the last Windows release suddenly came to my mind. Last factor : my recent issues with Xen and ATI Drivers on Win 7 virtual machine, and the lack of time to resolve them for now, leave me with no other choice than moving to Windows for gaming.">
+    <meta property="og:description" content="Microsoft recently took my attention thanks to its open-source move for a lot of their .NET core framework, and a bunch of other libraries (see Microsoft’s github).
+Add to that their recent partnership with Red Hat and Canonical, and the idea of testing the last Windows release suddenly came to my mind. Last factor : my recent issues with Xen and ATI Drivers on Win 7 virtual machine, and the lack of time to resolve them for now, leave me with no other choice than moving to Windows for gaming.">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Win10 Review">
+    <meta property="og:url" content="/blog/win10-review/">
+    <meta property="og:site_name" content="BuLLeKeUp&#39;s blog">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="BuLLeKeUp&#39;s blog">
+    <meta name="twitter:description" content="Microsoft recently took my attention thanks to its open-source move for a lot of their .NET core framework, and a bunch of other libraries (see Microsoft’s github).
+Add to that their recent partnership with Red Hat and Canonical, and the idea of testing the last Windows release suddenly came to my mind. Last factor : my recent issues with Xen and ATI Drivers on Win 7 virtual machine, and the lack of time to resolve them for now, leave me with no other choice than moving to Windows for gaming.">
+    
+      <meta name="twitter:creator" content="@BuLLeKeUp">
+    
+    
+
+    
+    
+
+    
+      <meta property="og:image" content="//www.gravatar.com/avatar/f8dd07be3e89881825b3d2c5f01d513d?s=640">
+    
+
+    
+    
+    
+
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="http://bullekeup.net/css/style-fpbzgxsy0kgmdvyrj5ykkg6ratccrk3gocmaqn4xpcjywmv5dteilzucro4f.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="http://bullekeup.net/">BuLLeKeUp&#39;s blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="http://bullekeup.net/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="//www.gravatar.com/avatar/f8dd07be3e89881825b3d2c5f01d513d?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="http://bullekeup.net/#about">
+          <img class="sidebar-profile-picture" src="//www.gravatar.com/avatar/f8dd07be3e89881825b3d2c5f01d513d?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">BuLLeKeUp</h4>
+        
+          <h5 class="sidebar-profile-bio">FOSS Coder - Guitar player - Cookie maker</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://bullekeup.net/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://bullekeup.net/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://bullekeup.net/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://bullekeup.net/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://bullekeup.net/courses">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Courses</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://bullekeup.net/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/bullekeup" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/6780627/bullekeup" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://bullekeup.net/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Win10 Review
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2016-03-15T18:14:56&#43;02:00">
+        
+  March 15, 2016
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="http://bullekeup.net/categories/windows">windows</a>, 
+    
+      <a class="category-link" href="http://bullekeup.net/categories/review">review</a>
+    
+  
+
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              
+
+<p>Microsoft recently took my attention thanks to its open-source move for a lot of their .NET core framework, and a bunch of other libraries (see <a href="https://github.com/Microsoft">Microsoft’s github</a>).</p>
+
+<p>Add to that their recent partnership with Red Hat and Canonical, and the idea of testing the last Windows release suddenly came to my mind. Last factor : my recent issues with Xen and ATI Drivers on Win 7 virtual machine, and the lack of time to resolve them for now, leave me with no other choice than moving to Windows for gaming.</p>
+
+<p>I choose to upgrade to Windows 10 Pro, which provides Hyper-V hypervisor for virtualization. This way, I can use Linux virtual machines for work, using the same hard drives as my former real Linux machine (Hyper-V supports disk passthrough). Plus, it allows me to test Windows as my primary work machine, just for fun.</p>
+
+<h2 id="global-impression">Global impression</h2>
+
+<p>Windows 10 feels good. Really. It’s easy to use and really easy to setup for global configuration, at least if you know what to search for. the UI is pretty and looks like a real Windows (and not this crap of Metro introduced in 8).</p>
+
+<h2 id="hyper-v-hypervisor">Hyper-V hypervisor</h2>
+
+<p>Works great. Easy to setup even for disk passthrough.
+Although, there is a huge drawback : no other passthrough supported. No USB passthrough. No PCI passthrough.
+Aside from the hard drive, you’re stucked with virtual devices for your virtual machines. That’s really bad for me, and will be the first reason of my return to Linux for my main machine.</p>
+
+<p><img src="http://bullekeup.net/img/win10-review/hyperv.png" alt="hyperv" title="Hyper-V Manager with 3 Linux machines" /></p>
+
+<h2 id="routing-and-network-configuration">Routing and network configuration</h2>
+
+<p>As a long time UNIX/Linux user, this is complete crap to me. Being used to the glorious man command, finding information about “advanced” network configuration on windows (like routing and firewall default configuration) really was nothing but pain and suffering. Besides this, you will never be allowed to know what really comes out of your machine, if you don’t have a network device to monitor your connection from the outside. And even if you see transmissions you never allowed, you may not be able to turn them off, leaving you with no other choice than blocking them in your firewall / router. That’s the second reason I will return to Linux in the coming weeks. And seriously Microsoft, when you give a no spyware button to the user, make it work for real.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>That’s it for now. If you don’t need Windows, then no reason to switch to Win 10. But if you play games and don’t have time to lose with Xen configuration and drivers issues, it can be a good option. I don’t think I will keep it in the long run, but for now I’ll keep it and it don’t bothers me. From a GNU/Linux user, that’s the sign of a good move from Microsoft on their OS.</p>
+
+<p>Good point to finish : last Cygwin release combined with VcXsrv provide a full functional GNU-like environment with X server on Windows. That’s really cool, even more if you’re a hardcore Linux user managing tons of remote Linux servers.</p>
+
+<p><img src="http://bullekeup.net/img/win10-review/cygwin-urxvt-x-forward.png" alt="cygwin urxvt x forward" title="Cygwin’s URxvt with zsh on VcXsrv X server – SSH connection with X forwarding" /></p>
+
+<h3 id="edit">[EDIT]</h3>
+
+<p>After two weeks on Windows 10, I decided to return as soon as possible on a Linux box. Windows 10 doesn’t shutdown properly, in fact it never totally shuts down, and stay in deep sleep. I found no way to correct that, even with all tips found on different websites, and for some unknown reason this seems to cause random start of my computer. I don’t like to see my PC starting itself and sending data to Microsoft and checking for updates itself. I want my PC to do what I want it to do, and not what Microsoft wants it to do.</p>
+
+<p><strong>Sources</strong></p>
+
+<p><a href="https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/windows_welcome">Microsoft Hyper-V Win 10 install guide</a><br/>
+<a href="https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/windows_welcome">Microsoft Hyper-V general guide</a><br/>
+<a href="http://sourceforge.net/projects/vcxsrv/">VcXsrv homepage</a>
+<a href="https://www.cygwin.com/">Cygwin</a><br/></p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="http://bullekeup.net/tags/win10/">win10</a>
+
+  <a class="tag tag--primary tag--small" href="http://bullekeup.net/tags/review/">review</a>
+
+                  </div>
+                
+              
+            
+            
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="http://bullekeup.net/blog/gnu-tools-windows-cygwin-vcxsrv/" data-tooltip="GNU Tools on Windows with Cygwin and Vcxsrv">
+              
+                <i class="fa fa-angle-left"></i>
+                <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+              </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                <i class="fa fa-angle-right"></i>
+              </a>
+            </li>
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://bullekeup.net/blog/win10-review/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://bullekeup.net/blog/win10-review/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://bullekeup.net/blog/win10-review/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2018 <a href="https://github.com/bullekeup">BuLLeKeUp</a>. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="http://bullekeup.net/blog/gnu-tools-windows-cygwin-vcxsrv/" data-tooltip="GNU Tools on Windows with Cygwin and Vcxsrv">
+              
+                <i class="fa fa-angle-left"></i>
+                <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+              </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                <i class="fa fa-angle-right"></i>
+              </a>
+            </li>
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://bullekeup.net/blog/win10-review/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://bullekeup.net/blog/win10-review/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://bullekeup.net/blog/win10-review/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbullekeup.net%2Fblog%2Fwin10-review%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http%3A%2F%2Fbullekeup.net%2Fblog%2Fwin10-review%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http%3A%2F%2Fbullekeup.net%2Fblog%2Fwin10-review%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="//www.gravatar.com/avatar/f8dd07be3e89881825b3d2c5f01d513d?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">BuLLeKeUp</h4>
+    
+      <div id="about-card-bio">FOSS Coder - Guitar player - Cookie maker</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Ph.D Student
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        France
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Search" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no post found</div>
+      <div class="results">
+        
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no post found"
+         data-message-one="1 post found"
+         data-message-other="{n} posts found">
+         0 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('http://bullekeup.net/images/bg.jpg');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha256-IFHWFEbU2/+wNycDECKgjIRSirRNIDp2acEB5fvdVRU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js" integrity="sha256-+mpyNVJsNt4rVXCw0F+pAOiB3YxmHgrbJsx4ecPuUaI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.js" integrity="sha256-vMxgR/7FtLovVA+IPrR7+xTgIgARH7y9VZQnmmi0HDI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.js" integrity="sha256-N0qFUh7/9vLvia87dDndewmsgsyYoNkdA212tPc+2NI=" crossorigin="anonymous"></script>
+
+
+<script src="http://bullekeup.net/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'http:\/\/bullekeup.net\/blog\/win10-review\/';
+          
+            this.page.identifier = '\/blog\/win10-review\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'hugo-tranquilpeak-theme';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+    
+  </body>
+</html>
+
