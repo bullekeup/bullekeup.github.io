@@ -61,6 +61,12 @@
   </url>
   
   <url>
+    <loc>https://bullekeup.github.io/categories/courses/</loc>
+    <lastmod>2018-05-23T09:44:06+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bullekeup.github.io/courses/</loc>
     <priority>0</priority>
   </url>
@@ -90,14 +96,14 @@
   </url>
   
   <url>
-    <loc>https://bullekeup.github.io/tags/gnu/</loc>
-    <lastmod>2016-03-15T18:41:32+02:00</lastmod>
+    <loc>https://bullekeup.github.io/tags/geipi/</loc>
+    <lastmod>2018-05-23T09:44:06+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bullekeup.github.io/tags/howto/</loc>
-    <lastmod>2016-05-13T17:49:05+02:00</lastmod>
+    <loc>https://bullekeup.github.io/tags/gnu/</loc>
+    <lastmod>2016-03-15T18:41:32+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -108,8 +114,8 @@
   </url>
   
   <url>
-    <loc>https://bullekeup.github.io/tags/linux/</loc>
-    <lastmod>2018-01-21T15:43:34+01:00</lastmod>
+    <loc>https://bullekeup.github.io/tags/howto/</loc>
+    <lastmod>2016-05-13T17:49:05+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -120,13 +126,19 @@
   </url>
   
   <url>
-    <loc>https://bullekeup.github.io/categories/network/</loc>
+    <loc>https://bullekeup.github.io/tags/linux/</loc>
     <lastmod>2018-01-21T15:43:34+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bullekeup.github.io/tags/ns3/</loc>
+    <loc>https://bullekeup.github.io/tags/mini-projet/</loc>
+    <lastmod>2018-05-23T09:44:06+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bullekeup.github.io/categories/network/</loc>
     <lastmod>2018-01-21T15:43:34+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -138,13 +150,25 @@
   </url>
   
   <url>
-    <loc>https://bullekeup.github.io/tags/review/</loc>
-    <lastmod>2016-03-15T18:14:56+02:00</lastmod>
+    <loc>https://bullekeup.github.io/tags/ns3/</loc>
+    <lastmod>2018-01-21T15:43:34+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bullekeup.github.io/tags/programmation-c/c&#43;&#43;/</loc>
+    <lastmod>2018-05-23T09:44:06+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bullekeup.github.io/categories/review/</loc>
+    <lastmod>2016-03-15T18:14:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bullekeup.github.io/tags/review/</loc>
     <lastmod>2016-03-15T18:14:56+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -156,13 +180,13 @@
   </url>
   
   <url>
-    <loc>https://bullekeup.github.io/tags/ubuntu/</loc>
+    <loc>https://bullekeup.github.io/categories/ubuntu/</loc>
     <lastmod>2018-01-21T15:43:34+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bullekeup.github.io/categories/ubuntu/</loc>
+    <loc>https://bullekeup.github.io/tags/ubuntu/</loc>
     <lastmod>2018-01-21T15:43:34+01:00</lastmod>
     <priority>0</priority>
   </url>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programmation C/C&#43;&#43; on BuLLeKeUp&#39;s blog</title>
+    <link>https://bullekeup.github.io/tags/programmation-c/c&#43;&#43;/</link>
+    <description>Recent content in Programmation C/C&#43;&#43; on BuLLeKeUp&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 May 2018 09:44:06 +0200</lastBuildDate>
+    
+	<atom:link href="https://bullekeup.github.io/tags/programmation-c/c++/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GEIPI 1A - Mini-projets TD</title>
+      <link>https://bullekeup.github.io/courses/geipi_1a_mini_projet_td/</link>
+      <pubDate>Wed, 23 May 2018 09:44:06 +0200</pubDate>
+      
+      <guid>https://bullekeup.github.io/courses/geipi_1a_mini_projet_td/</guid>
+      <description>Consignes mini-projets TD de programmation C/C++ Ces mini-projets ont pour but de vous confronter à la programmation avec un objectif concret, en utilisant les notions théoriques vues en cours.
+Sujets Jeux d&amp;rsquo;automates cellulaires avec différents algorithmes Réaliser un jeu de la vie de Conway en C++. Chaque début de nouvelle partie doit être généré aléatoirement. Votre programme devra pouvoir sauvegarder son état actuel dans un fichier pour continuer lors d&amp;rsquo;une prochaine éxécution, sauf si la partie est terminée.</description>
+    </item>
+    
+  </channel>
+</rss>
