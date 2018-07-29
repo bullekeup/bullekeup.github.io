@@ -21,7 +21,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Hugo 0.40.3 with theme Tranquilpeak 0.4.1-BETA">
+    <meta name="generator" content="Hugo 0.44 with theme Tranquilpeak 0.4.1-BETA">
     <title>Complete NS3 with DCE installation on Ubuntu 16.04 and 17.04</title>
     <meta name="author" content="BuLLeKeUp">
     <meta name="keywords" content="ubuntu, linux, ns3, installation, dce, development, linux">
@@ -30,18 +30,18 @@
     
 
     
-    <meta name="description" content="Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
-">
-    <meta property="og:description" content="Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
-">
+    <meta name="description" content="I recently installed NS3 to benchmark different network applications and protocol implementations such as libcoap. I used different VMs with either Ubuntu 16.04 LTS or Ubuntu 17.04 to run NS3, and since I encountered many difficulties to make all modules successfully build and work, here are some patches to overcome common problems (may not be optimal, take it as a bunch of hints.
+NOTE: This applies only for NS3 installation via bake.">
+    <meta property="og:description" content="I recently installed NS3 to benchmark different network applications and protocol implementations such as libcoap. I used different VMs with either Ubuntu 16.04 LTS or Ubuntu 17.04 to run NS3, and since I encountered many difficulties to make all modules successfully build and work, here are some patches to overcome common problems (may not be optimal, take it as a bunch of hints.
+NOTE: This applies only for NS3 installation via bake.">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="Complete NS3 with DCE installation on Ubuntu 16.04 and 17.04">
     <meta property="og:url" content="/blog/ns3-dce-ubuntu-16-4-17-4/">
     <meta property="og:site_name" content="BuLLeKeUp&#39;s blog">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="BuLLeKeUp&#39;s blog">
-    <meta name="twitter:description" content="Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
-">
+    <meta name="twitter:description" content="I recently installed NS3 to benchmark different network applications and protocol implementations such as libcoap. I used different VMs with either Ubuntu 16.04 LTS or Ubuntu 17.04 to run NS3, and since I encountered many difficulties to make all modules successfully build and work, here are some patches to overcome common problems (may not be optimal, take it as a bunch of hints.
+NOTE: This applies only for NS3 installation via bake.">
     
       <meta name="twitter:creator" content="@BuLLeKeUp">
     
@@ -55,10 +55,6 @@
     
 
     
-      <meta property="og:image" content="//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city-750.jpg">
-    
-    
-      <meta property="og:image" content="//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city.jpg">
     
     
 
@@ -221,13 +217,15 @@
 </nav>
 
       
-  <div class="post-header-cover
-              text-center
-              "
-       style="background-image:url('//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city.jpg')"
-       data-behavior="4">
-    
-      <div class="post-header main-content-wrap text-center">
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-center">
   
     <h1 class="post-title" itemprop="headline">
       Complete NS3 with DCE installation on Ubuntu 16.04 and 17.04
@@ -261,23 +259,12 @@
   </div>
 
 </div>
-    
-  </div>
-
-
-      <div id="main" data-behavior="4"
-        class="hasCover
-               hasCoverMetaIn
-               ">
-        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
-          
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
-</p>
+              
 
-<p>I recently installed NS3 to benchmark different network applications and protocol implementations such as <a href="https://github.com/obgm/libcoap">libcoap</a>. I used different VMs with either Ubuntu 16.04 LTS or Ubuntu 17.04 to run NS3, and since I encountered many difficulties to make all modules successfully build and work, here are some patches to overcome common problems.</p>
+<p>I recently installed NS3 to benchmark different network applications and protocol implementations such as <a href="https://github.com/obgm/libcoap">libcoap</a>. I used different VMs with either Ubuntu 16.04 LTS or Ubuntu 17.04 to run NS3, and since I encountered many difficulties to make all modules successfully build and work, here are some patches to overcome common problems (<strong>may not be optimal, take it as a bunch of hints</strong>.</p>
 
 <p><em>NOTE: This applies only for NS3 installation via bake. Instructions can be altered to work with waf directly but I don&rsquo;t provide them.</em></p>
 
@@ -366,6 +353,7 @@ user@machine$: bake.py deploy -o pybindgen-0.17.0.post57+nga6376f2
 <p>You can now continue the installation process as specified in <a href="https://www.nsnam.org/wiki/Installation#Installation_with_Bake">NS3 installation tutorial</a>.</p>
 
 <p>I made a small install script wrapper (doesn&rsquo;t include dependencies installation, and to be adapted to your needs) for ns-3.26 with dce-linux-1.9 install, available <a href="https://gist.github.com/bullekeup/c04559f7cb75d5565706fd5146cc8538">here</a>.</p>
+
               
             </div>
           </div>
